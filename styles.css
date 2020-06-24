@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+
+  outline: 0;
+
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+:root {
+  --color-green: #50FA7B;
+  --color-gray: #24252E;
+  --color-gray-light: #282A36;
+  --color-purple: #697AFA;
+}
+
+body {
+  background: var(--color-gray);
+}
+
+/* ===== Header ===== */
+
+header {
+  width: 100%;
+  height: 68px;
+  background: var(--color-gray-light);
+  border: 0;
+  border-bottom: 2px solid var(--color-green);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 40px; 
+  position: relative;
+}
+
+.container ul {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.container ul li {
+  list-style: none;
+}
+.container ul li:nth-of-type(2) {
+  margin-left: 20px;
+}
+
+.container ul li#selection {
+  display: flex;
+  align-items: center;
+  padding: 5px 15px;
+  border-radius: 100px;
+
+  background: var(--color-purple);
+}
+
+.container ul li a {
+  text-decoration: none;
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 17;
+  color: #fff;
+}
+
+.container #icons {
+  margin-top: 20px;
+}
+
+.container #icons img {
+  margin-left: 30px;
+}
+
+/* ===== about ===== */
