@@ -11,6 +11,7 @@
 }
 
 :root {
+  --color-white: #fff;
   --color-green: #50FA7B;
   --color-gray: #24252E;
   --color-gray-light: #282A36;
@@ -18,6 +19,9 @@
 }
 
 body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--color-white);
+
   background: var(--color-gray);
 }
 
@@ -31,27 +35,34 @@ header {
   border-bottom: 2px solid var(--color-green);
 }
 
-.container {
+header .content {
   display: flex;
   justify-content: space-between;
   margin: 0 40px; 
   position: relative;
 }
 
-.container ul {
+header .content ul {
   display: flex;
   align-items: center;
   margin-top: 15px;
 }
 
-.container ul li {
+header .content ul li {
   list-style: none;
+
+  transition: all 200ms;
 }
-.container ul li:nth-of-type(2) {
+header .content ul li:nth-of-type(2) {
   margin-left: 20px;
 }
 
-.container ul li#selection {
+header .content ul li:hover {
+  transform: scale(1.2);
+  opacity: 0.9;
+}
+
+header .content ul li#selection {
   display: flex;
   align-items: center;
   padding: 5px 15px;
@@ -60,21 +71,81 @@ header {
   background: var(--color-purple);
 }
 
-.container ul li a {
+header .content ul li a {
   text-decoration: none;
 
-  font-family: 'Roboto', sans-serif;
   font-weight: bold;
   font-size: 17;
   color: #fff;
 }
 
-.container #icons {
+header .content #icons {
   margin-top: 20px;
 }
 
-.container #icons img {
+header .content #icons img {
   margin-left: 30px;
+
+  transition: all 200ms;
+}
+
+header .content #icons img:hover {
+  transform: scale(1.3);
+  opacity: 0.9;
 }
 
 /* ===== about ===== */
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  width: 100%;
+  height: 370px;
+  background: var(--color-gray-light);
+  box-shadow: 19px 17px 6px -5px rgba(0,0,0,0.05);
+}
+
+main .content #teacher {
+  display: flex;
+  justify-content: center;
+}
+
+main .content #teacher #avatar {
+  position: relative;
+  margin-top: 50px;
+  margin-right: 6%;
+}
+
+main .content #teacher #avatar img {
+  max-width: 250px;
+  width: 100%;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+
+  position: relative;
+  border: 2px solid var(--color-green);
+  z-index: 2;
+}
+
+main .content #teacher #avatar #circle {
+  z-index: 1;
+  max-width: 250px;
+  width: 100%;
+  height: 250px;
+  border-radius: 50%;
+  background: var(--color-green);
+
+  position: absolute;
+  left: 21%;
+  top: 9%;
+}
+
+main .content #teacher #presentation {
+  max-width: 450px;
+  width: 100%;
+
+  margin-top: 100px;
+  margin-right: 10%;
+}
