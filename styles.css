@@ -152,6 +152,13 @@ main .content #teacher #presentation {
   margin-right: 10%;
 }
 
+main .content #teacher #presentation p {
+  margin-top: 5px;
+
+  line-height: 20px;
+  letter-spacing: 0.08em;
+}
+
 #classes {
   margin-top: 80px;
   background: #24252E;
