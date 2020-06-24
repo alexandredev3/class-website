@@ -23,6 +23,8 @@ body {
   color: var(--color-white);
 
   background: var(--color-gray);
+
+  height: 100vh;
 }
 
 /* ===== Header ===== */
@@ -173,6 +175,13 @@ main .content #teacher #presentation {
   width: 400px;
   border-radius: 6px;
   border: solid 8px var(--color-purple);
+  cursor: pointer;
+
+  transition: all 200ms;
+}
+#classes .card .video img:hover {
+  filter: brightness(1.2);
+  transform: scale(1.05);
 }
 
 #classes .card .description {
@@ -180,11 +189,19 @@ main .content #teacher #presentation {
   margin-left: 40px;
 }
 
+#classes .card .description h2 {
+  font-size: 27px;
+}
+
+#classes .card .description p {
+  margin-top: 10px;
+}
+
 #classes .card .infos {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 84px;
 }
 
 #classes .card .infos span {
@@ -194,4 +211,43 @@ main .content #teacher #presentation {
   font-size: 17px;
 
   background: var(--color-purple);
+}
+
+.content button {
+  display: flex;
+  margin: 0 auto;
+  padding: 12px 50px;
+
+  font-size: 16px;
+  color: #fff;
+
+  cursor: pointer;
+
+  border: 0;
+  border-radius: 25px;
+  background: var(--color-purple);
+
+  transition: all 200ms;
+}
+
+.content button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* ===== footer ===== */
+
+footer#footer {
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+footer#footer a {
+  color: var(--color-green);
+  text-decoration: none;
+}
+footer#footer a:hover {
+  text-decoration: underline;
 }
