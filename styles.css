@@ -202,13 +202,15 @@ main .content #teacher #presentation p {
 
 #classes .card .description p {
   margin-top: 10px;
+  line-height: 20px;
+  letter-spacing: 0.08em;
 }
 
 #classes .card .infos {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 84px;
+  margin-top: 60px;
 }
 
 #classes .card .infos span {
@@ -218,6 +220,10 @@ main .content #teacher #presentation p {
   font-size: 17px;
 
   background: var(--color-purple);
+}
+
+.content a {
+  text-decoration: none;
 }
 
 .content button {
@@ -257,4 +263,73 @@ footer#footer a {
 }
 footer#footer a:hover {
   text-decoration: underline;
+}
+
+/* ====== Page: Classes ====== */
+
+#new-class .card {
+  display: flex;
+  justify-content: center;
+}
+
+#new-class .card .video img {
+  width: 500px;
+  border-radius: 6px;
+  border: solid 8px var(--color-purple);
+  cursor: pointer;
+  margin-top: 40px;
+}
+
+#new-class .card .video {
+  position: relative;
+  transition: all 200ms;
+}
+
+#new-class .card .video:hover {
+  filter: brightness(1.2);
+  transform: scale(1.05);
+}
+
+#new-class .card .video #new {
+  position: absolute;
+  top: 25px;
+  left: 12px;
+
+  padding: 5px 20px;
+  border-radius: 20px;
+
+  color: var(--color-gray-light);
+  background: #F7D05F;
+}
+
+#new-class .card .description {
+  width: 400px;
+  margin-left: 40px;
+  margin-top: 40px;
+}
+
+#new-class .card .description h2 {
+  font-size: 32px;
+}
+
+#new-class .card .description p {
+  margin-top: 10px;
+  line-height: 20px;
+  letter-spacing: 0.08em;
+}
+
+#new-class .card .infos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 104px;
+}
+
+#new-class .card .infos span {
+  padding: 6px 35px;
+  border-radius: 30px;
+  
+  font-size: 17px;
+
+  background: var(--color-purple);
 }
