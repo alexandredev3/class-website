@@ -40,7 +40,7 @@ header {
 header .content {
   display: flex;
   justify-content: space-between;
-  margin: 0 40px; 
+  margin: 0 42px; 
   position: relative;
 }
 
@@ -82,16 +82,18 @@ header .content ul li a {
 }
 
 header .content #icons {
-  margin-top: 20px;
+  font-size: 2em;
+  margin-top: 15px;
 }
 
-header .content #icons img {
-  margin-left: 30px;
+header .content #icons svg {
+  color: #fff;
+  margin-left: 20px;
 
   transition: all 200ms;
 }
 
-header .content #icons img:hover {
+header .content #icons svg:hover {
   transform: scale(1.3);
   opacity: 0.9;
 }
@@ -175,11 +177,12 @@ main .content #teacher #presentation p {
   display: flex;
   justify-content: center;
 
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 #classes .card .video img {
-  width: 400px;
+  max-width: 400px;
+  width: 100%;
   border-radius: 6px;
   border: solid 8px var(--color-purple);
   cursor: pointer;
@@ -197,20 +200,18 @@ main .content #teacher #presentation p {
 }
 
 #classes .card .description h2 {
-  font-size: 27px;
+  font-size: 21px;
 }
 
 #classes .card .description p {
-  margin-top: 10px;
-  line-height: 20px;
-  letter-spacing: 0.08em;
+  margin-top: 14px;
 }
 
 #classes .card .infos {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 60px;
+  margin-top: 20px;
 }
 
 #classes .card .infos span {
@@ -228,41 +229,32 @@ main .content #teacher #presentation p {
 
 .content button {
   display: flex;
+  align-items: center;
   margin: 0 auto;
-  padding: 12px 50px;
+  padding: 8px 30px;
 
-  font-size: 16px;
+  font-size: 18px;
   color: #fff;
 
   cursor: pointer;
 
-  border: 0;
-  border-radius: 25px;
-  background: var(--color-purple);
+  border: 1px solid var(--color-purple);
+  border-radius: 40px;
+  background: none;
 
   transition: all 200ms;
+}
+
+.content button svg {
+  margin-left: 5px;
+  font-size: 1em;
 }
 
 .content button:hover {
   transform: scale(1.05);
   opacity: 0.9;
-}
-
-/* ===== footer ===== */
-
-footer#footer {
-  width: 100%;
-  margin-top: 40px;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-footer#footer a {
-  color: var(--color-green);
-  text-decoration: none;
-}
-footer#footer a:hover {
-  text-decoration: underline;
+  border: 1px solid transparent;
+  background: var(--color-purple);
 }
 
 /* ====== Page: Classes ====== */
@@ -322,7 +314,7 @@ footer#footer a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 104px;
+  margin-top: 20px;
 }
 
 #new-class .card .infos span {
@@ -332,4 +324,21 @@ footer#footer a:hover {
   font-size: 17px;
 
   background: var(--color-purple);
+}
+
+/* ===== footer ===== */
+
+footer#footer {
+  width: 100%;
+  margin-top: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+footer#footer a {
+  color: var(--color-green);
+  text-decoration: none;
+}
+footer#footer a:hover {
+  text-decoration: underline;
 }

@@ -3,9 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+  <!-- link font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/solid.min.css">
+  
   <link rel="stylesheet" href="./styles.css">
   <title>AlexandreDev - About</title>
+  
+  <!-- script font awesome -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js" defer></script>
 </head>
 </head>
 <body>
@@ -26,26 +32,23 @@
           <a 
             href="https://github.com/alexandredev3"
             target="_blank"
-            rel="external"
           >
-            <img src="./assets/icon-github.svg" alt="github">
+            <i class="fab fa-github-square"></i>
           </a>
   
           <a 
             href="https://www.linkedin.com/in/alexandre-costa-401699199/"
             target="_blank"
-            rel="external"
           >
-            <img src="./assets/icon-linkedin.svg" alt="linkedin">
+            <i class="fab fa-linkedin"></i>
           </a>
   
           <a 
             href="https://twitter.com/alexandredevv"
             target="_blank"
-            rel="external"
           >
-            <img src="./assets/icon-twitter.svg" alt="twitter">
-          </a> 
+            <i class="fab fa-twitter-square"></i>
+          </a>  
         </div> <!--icons-->
       </div> <!--content-->
     </header>
@@ -76,14 +79,19 @@
             </div>
             <div class="description">
 
-              <h2>Class title</h2>
+              <h2>Manipulação de DOM com JavaScript, do zero, na prática | Masterclass #18
+              </h2>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget euismod turpis. Pellentesque non nulla at leo mattis aliquet. Nam lacus diam, aliquam ac ipsum a, commodo aliquet metus.
               </p>
 
               <div class="infos">
-                <p>21:32</p>
-                <span>free</span>
+                <div class="card__info">
+                  <p>21:32</p>
+                </div>
+                <div class="card__price">
+                  <span>free</span>
+                </div>
               </div>
 
             </div> <!-- description -->
@@ -129,7 +137,12 @@
 
         </div> <!-- classes -->
 
-        <a href="./classes.html"><button type="submit">See all classes</button></a>
+        <a href="./classes.html">
+          <button type="submit">
+            See all classes
+            <i data-feather="arrow-right"></i>
+          </button>
+        </a>
       </div> <!-- content -->
       <footer id="footer">
         <span>
@@ -139,6 +152,13 @@
     </main>
 
   </div> <!--container-->
+
+  <!--Feather icons-->
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  <script>
+    feather.replace()
+  </script>
+
 
 </body>
 </html>
